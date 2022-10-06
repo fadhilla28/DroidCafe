@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="24dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:text="@string/order_label_text"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="24dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="24dp"
         android:text="@string/name_label_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/order_textview" />
@@ -70,7 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="24dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="24dp"
         android:text="@string/phone_label_string"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/address_text" />
@@ -93,10 +93,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="24dp"
         android:text="@string/note_label_string"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/address_text" />
+        app:layout_constraintTop_toBottomOf="@+id/phone_text" />
 
     <EditText
         android:id="@+id/note_text"
@@ -115,10 +115,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="24dp"
         android:text="@string/city_label_string"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/address_text" />
+        app:layout_constraintTop_toBottomOf="@+id/note_text" />
 
     <Spinner
         android:id="@+id/sp_name"
@@ -131,7 +131,6 @@
         android:entries="@array/city_name"
         app:layout_constraintBaseline_toBaselineOf="@+id/city_label"
         app:layout_constraintStart_toEndOf="@+id/city_label" />
-        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/delivery_label"
@@ -139,11 +138,11 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="24dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="24dp"
         android:text="@string/choose_delivery_method"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phone_text"
+        app:layout_constraintTop_toBottomOf="@+id/sp_name"
         tools:ignore="UnknownId" />
 
     <RadioGroup
